@@ -7,7 +7,7 @@ const Header = () => {
           <div className="container px-6 py-3 mx-auto md:flex md:justify-between md:items-center">
               <div className="flex items-center justify-between">
                   <div>
-                    <Link as={`/`} href="/">
+                    <Link as={`/`} href='/'>
                       <a className="text-xl font-bold text-gray-800 dark:text-white md:text-2xl hover:text-gray-700 dark:hover:text-gray-300">{BLOG_NAME}</a>
                     </Link>
                   </div>
@@ -27,7 +27,7 @@ const Header = () => {
                     <Link as={`/`} href="/">
                         <a className="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0">Blog</a>
                     </Link>
-                    <Link as={`/about`} href="/about">
+                    <Link as={`/about`} href='/about'>
                         <a className="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0">About</a>
                     </Link>
                   </div>
