@@ -8,14 +8,12 @@ type Props = {
 const Posts = ({ posts }: Props) => {
   return (
     <section>
-      <div>
+      <div className="space-y-6">
         {posts.map((post) => (
           <PostPreview
             key={post.slug}
             title={post.title}
-            coverImage={post.coverImage}
             date={post.date}
-            author={post.author}
             slug={post.slug}
             excerpt={post.excerpt}
           />
@@ -23,6 +21,6 @@ const Posts = ({ posts }: Props) => {
       </div>
     </section>
   )
-}
+};
 
-export default Posts
+export default Posts;

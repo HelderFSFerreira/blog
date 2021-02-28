@@ -1,11 +1,11 @@
-import Container from '../components/container'
-import MoreStories from '../components/posts'
-import Header from '../components/header'
-import Layout from '../components/layout'
-import { getAllPosts } from '../lib/api'
-import Head from 'next/head'
-import { BLOG_NAME } from '../lib/constants'
-import Post from '../types/post'
+import Container from '../components/container';
+import MoreStories from '../components/posts';
+import Header from '../components/header';
+import Layout from '../components/layout';
+import { getAllPosts } from '../lib/api';
+import Head from 'next/head';
+import { BLOG_NAME } from '../lib/constants';
+import Post from '../types/post';
 
 type Props = {
   allPosts: Post[]
