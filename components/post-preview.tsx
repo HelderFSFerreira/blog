@@ -1,43 +1,34 @@
-import Avatar from './avatar'
 import DateFormatter from './date-formatter'
-import CoverImage from './cover-image'
 import Link from 'next/link'
-import Author from '../types/author'
 
 type Props = {
   title: string
-  coverImage: string
   date: string
   excerpt: string
-  author: Author
   slug: string
 }
 
 const PostPreview = ({
   title,
-  coverImage,
   date,
   excerpt,
-  author,
   slug,
 }: Props) => {
   return (
-    <div>
-      <div className="mb-5">
-        <CoverImage slug={slug} title={title} src={coverImage} />
+    <div className="max-w-2xl px-8 py-4 mx-auto bg-white rounded-lg shadow-md dark:bg-gray-800">
+      <div className="flex items-center justify-between">
+          <span className="text-sm font-light text-gray-600 dark:text-gray-400"><DateFormatter dateString={date}/></span>
+          <a className="px-3 py-1 text-sm font-bold text-gray-100 transition-colors duration-200 transform bg-gray-600 rounded cursor-pointer hover:bg-gray-500">Design</a>
       </div>
-      <h3 className="text-3xl mb-3 leading-snug">
+
+      <div className="mt-2">
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
-          <a className="hover:underline">{title}</a>
+          <a href="/posts/[slug]" className="text-2xl font-bold text-gray-700 dark:text-white hover:text-gray-600 dark:hover:text-gray-200 hover:underline">{title}</a>
         </Link>
-      </h3>
-      <div className="text-lg mb-4">
-        <DateFormatter dateString={date} />
+          <p className="mt-2 text-gray-600 dark:text-gray-300">{excerpt}</p>
       </div>
-      <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-      <Avatar name={author.name} picture={author.picture} />
     </div>
   )
-}
+};
 
 export default PostPreview
