@@ -12,10 +12,10 @@ Created to learn nextjs and tailwind CSS and keep me organized.
 
 ### Build
 ```bash
-    docker build -t helderferreira/blog .
+docker build -t helderferreira/blog .
 ```
 
 ### Run
 ```bash
-    docker run -it -p 3000:3000 helderferreira/blog:latest
+docker run -it -p 3000:3000 helderferreira/blog:latest
 ```
