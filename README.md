@@ -1,21 +1,22 @@
 # My Personal blog
 
+## Why
 Created to learn nextjs and tailwind CSS and keep me organized.
 
-# Deploy
+## Deploy
 
-## Vercel
+### Vercel
     Deployed automatically on every new branch
 
-## Docker
+### Docker
     Used in production ATM
 
-### Build
+#### Build
 ```bash
 docker build -t helderferreira/blog .
 ```
 
-### Run
+#### Run
 ```bash
 docker run -it -p 3000:3000 helderferreira/blog:latest
 ```
