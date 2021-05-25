@@ -36,7 +36,7 @@ const Meta = () => {
         name="description"
         content={BLOG_NAME}
       />
-      <script async defer data-domain="helderferreira.io" src="https://plausible.io/js/plausible.js"/>
+      <script defer data-domain="helderferreira.io" data-api="/qwerty/api/event" src="/qwerty/js/script.js"></script>
       {/* <meta property="og:image" content={HOME_OG_IMAGE_URL} /> */}
     </Head>
   )
